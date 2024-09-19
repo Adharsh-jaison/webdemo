@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <h1><button><a href="index.html" style="color: whitesmoke;">Continue Shopping</a></button></h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cartItems">
+            <h2>Your Cart Items</h2>
+            <div id="itemsList"></div>
+            <p id="totalPrice">Total: $0</p>
+            <button id="checkoutButton">Checkout</button>
+        </section>
+
+        <section id="payment" style="display: none;">
+            <h2>Payment</h2>
+            <form id="paymentForm">
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                <input type="text" placeholder="CVV" required>
+                <button type="submit">Submit Payment</button>
+            </form>
+        </section>
+
+        <section id="successMessage" style="display: none;">
+            <h2>Payment Successful</h2>
+            <p>Your payment has been processed successfully.</p>
+            <a href="index.html">Continue Shopping</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Site</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
