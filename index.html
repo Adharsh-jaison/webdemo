@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -248,6 +248,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
     </script>
     <script>
+        gtag("event", "select_item", {
+  item_list_id: "related_products",
+  item_list_name: "Related products",
+  items: [
+    {
+      item_id: "SKU_12345",
+      item_name: "Samsung Mobile Phone",
+      affiliation: "Samsung Mobile Phone",
+      coupon: "SUMMER_FUN",
+      discount: 2.22,
+      index: 0,
+      item_brand: "Google",
+      item_category: "Apparel",
+      item_brand: "Samsung Mobile Phone",
+      item_category: "Apparel",
+      item_category2: "Product 1",
+      item_category3: "Product 2",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 10.01,
+      quantity: 3
+    }
+  ]
+});
      gtag("event", "view_item details", {
     currency: "USD",
     value: 30.03,
@@ -255,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {
       item_id: "SKU_12345",
       item_name: "Samsung Mobile Phone",
-      affiliation: "Mobile Shop",
+      affiliation: "Samsung Mobile Shop",
       coupon: "SUMMER_FUN",
       discount: 2.22,
       index: 0,
@@ -346,6 +369,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       coupon: "SUMMER_FUN",
       discount: 2.22,
       index: 0,
+      item_brand: "Samsung Mobile Phone",
+      item_category: "Apparel",
+      item_category2: "Product 1",
+      item_category3: "Product 2",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 10.01,
+      quantity: 3
+    }
+  ]
+});
+
+        gtag("event", "begin_checkout", {
+  currency: "USD",
+  value: 30.03,
+  coupon: "SUMMER_FUN",
+  items: [
+    {
+      item_id: "SKU_12345",
+      item_name: "Samsung Mobile Phone",
+      affiliation: "Samsung Mobile Phone",
+      coupon: "SUMMER_FUN",
+      discount: 2.22,
+      index: 0,
+      item_brand: "Samsung Mobile Phone",
+      item_category: "Apparel",
+      item_category2: "Product 1",
+      item_category3: "Product 2",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 10.01,
+      quantity: 3
+    }
+  ]
+});
+
+        gtag("event", "add_shipping_info", {
+  currency: "USD",
+  value: 30.03,
+  coupon: "SUMMER_FUN",
+  shipping_tier: "Ground",
+  items: [
+    {
+      item_id: "SKU_12345",
+      item_name: "Samsung Mobile Phone",
+      affiliation: "Samsung Mobile Phone",
+      coupon: "SUMMER_FUN",
+      discount: 2.22,
+      index: 0,
+      item_brand: "Samsung Mobile Phone",
+      item_category: "Apparel",
+      item_brand: "Samsung Mobile Phone",
+      item_category: "Apparel",
+      item_category2: "Product 1",
+      item_category3: "Product 2",
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 10.01,
+      quantity: 3
+    }
+  ]
+});
+
+        gtag("event", "add_payment_info", {
+  currency: "USD",
+  value: 30.03,
+  coupon: "SUMMER_FUN",
+  payment_type: "Credit Card",
+  items: [
+    {
+      item_id: "SKU_12345",
+      item_name: "Samsung Mobile Phone",
+      affiliation: "Samsung Mobile Phone",
+      coupon: "SUMMER_FUN",
+      discount: 2.22,
+      index: 0,
+      item_brand: "Samsung Mobile Phone",
+      item_category: "Apparel",
       item_brand: "Samsung Mobile Phone",
       item_category: "Apparel",
       item_category2: "Product 1",
