@@ -15,14 +15,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <title>Product Listing</title>
     <link rel="stylesheet" href="styles.css">
  
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8RKC13LBH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-X8RKC13LBH');
+        gtag('config', 'G-X8RKC13LBH',{ 'debug_mode': true });
     </script>
 </head>
 <body>
@@ -200,8 +200,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="script.js"></script>
      <div>This is where the purchase form would go</div>
-    <button>Submit</button>
+    <button id="purchase">Purchase</button>
     <script>
+    document.getElementById("purchase").addEventListener("click", function () {
     gtag("event", "purchase", {
         transaction_id: "T_12345_1",
         value: 30.03,
